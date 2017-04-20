@@ -30,7 +30,7 @@
 #   and training strategies may be of course better suited to achieve improved
 #   results in this or other problems.
 #
-# Copyright (c) 2017 by Gonzalo Mateo-Garcia
+# Copyright (c) 2017 by Gonzalo Mateo-García, Jordi Muñoz-Marí, Valero Laparra, Luis Gómez-Chova
 # gonzalo.mateo-garcia@uv.es
 # http://isp.uv.es/
 #
@@ -44,21 +44,21 @@ from keras import regularizers
 from keras import metrics
 from keras.callbacks import Callback
 
-from scipy.spatial.distance import pdist
 import numpy as np
 import logging
 from time import time
 
-import log_conf as log
+#import log_conf as log
 
 LOSS = "mse"
 K.set_floatx("float64")
 
 logger = logging.getLogger(__name__)
-log.screen_logger(logger)
+#log.screen_logger(logger)
 
 
 def init_gamma_numpy(x):
+    from scipy.spatial.distance import pdist
     D = pdist(x)
     return 1/(2*np.median(D[D>0]))
 
