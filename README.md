@@ -1,11 +1,10 @@
-# Optimized Basis Functions for Kernel Ridge Regression
-Demo of the method for optimized basis fuctions for kernel ridge regression.
+# Optimizing Kernel Ridge Regression for Remote Sensing Problems
+Demo of the method presented in Optimizing KRR for Remote Sensing Problems IGARSS 2018
 
-See `sin_example.ipynb` for a practical demo.
+See `toy_example.ipynb` for a practical demo.
 
 ### Requirements
 Code is tested with:
 * `python 3.5`
 * `numpy`
-* `keras` 2.0 (specifically with `theano` 0.9 backend but prepared to run with `tensorflow` too).
-
+* `keras` 2.0 with `tensorflow` backend.
